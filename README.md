@@ -183,7 +183,7 @@ false. Используй оператор `??` (nullish coalescing operator).
 ```js
 const incomingValue = 5;
 const defaultValue = 10;
-const value = incomingValue || defaultValue;
+const value = ;
 console.log(value);
 ```
 
@@ -203,10 +203,6 @@ const hours = Math.floor(totalMinutes / 60);
 const minutes = totalMinutes % 60;
 console.log(hours);
 console.log(minutes);
-
-const doubleDigitHours = String(hours).padStart(2, 0);
-const doubleDigitMinutes = String(minutes).padStart(2, 0);
-console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
 ```
 
 ---
