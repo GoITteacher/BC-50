@@ -159,14 +159,10 @@ let numOfDates = 0;
 //     numOfDates = 365;
 // }
 
-if (year % 400 === 0) {
-        numOfDates = 366;
-    } else  if (year % 100 === 0) {
-        numOfDates = 365;
-    } else if (year % 4 === 0) {
-        numOfDates = 366;
-    } else {
-        numOfDates = 365;
-    }
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    numOfDates = 366;
+}else{
+    numOfDates = 365;
+}
 
 
