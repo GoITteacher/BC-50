@@ -20,7 +20,6 @@
 
 // =========================================
 
-
 /* const arr = [9,2,6,8,2,6,8,1,21];
 let count=0;
 for(let i=0;i<arr.length-1;i+=1){
@@ -35,9 +34,7 @@ for(let i=0;i<arr.length-1;i+=1){
 console.log(count);
 console.log(arr); */
 
-
 // ======================================
-
 
 // const arr = ["Telescopes", "Glasses", "Eyes", "Monocles"];
 // for (let i = 0; i < arr.length-1; i+=1) {
@@ -50,7 +47,6 @@ console.log(arr); */
 //     }
 // }
 // console.log(arr)
-
 
 // =================================
 // const arr = [1,5,1,43,8,23,6,8];
@@ -81,7 +77,6 @@ console.log(arr); */
 // console.log(result);
 
 // ====================================
-
 
 // const arr = ['D','D','D','L','D','L'];
 // let result = 'N'
@@ -116,21 +111,15 @@ console.log(arr); */
 
 // console.log(arr);
 
-
 // =========================
 
-const arr1 = [1,2,3,5,6,7,2,1];
-const arr2 = [1,2,3,5,7,2,68,9,3,8,9,4,3];
+const arr1 = [1, 2, 3, 5, 6, 7, 2, 1];
+const arr2 = [1, 2, 3, 5, 7, 2, 68, 9, 3, 8, 9, 4, 3];
 const arr = arr1.concat(arr2);
 let total = 0;
 
-for(let num of arr){
-    total += num;
+for (let num of arr) {
+  total += num;
 }
 
 console.log(total);
-
-
-
-
-
