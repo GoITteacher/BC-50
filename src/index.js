@@ -95,7 +95,6 @@ function showMatrix(matrix) {
   for (const el of matrix) {
     result += el.join('') + '\n';
   }
-  console.log(result);
   return result;
 }
 
@@ -136,4 +135,112 @@ function fibba(index) {
   return fibba(index - 1) + fibba(index - 2);
 }
 
-console.log(fibba(5));
+// console.log(fibba(5));
+
+function foo(arr) {
+  let result = 0;
+  let max;
+  while (max != 0) {
+    showArray(arr);
+    max = findMax(arr);
+    const firstIndex = arr.indexOf(max);
+    const lastIndex = arr.lastIndexOf(max);
+
+    if (firstIndex === lastIndex) {
+      arr[firstIndex] -= 1;
+    } else {
+      for (let i = firstIndex; i <= lastIndex; i++) {
+        if (arr[i] === max) {
+          arr[i] -= 1;
+        } else {
+          result += 1;
+        }
+      }
+    }
+  }
+
+  console.log(result);
+  return result;
+}
+
+function findMax(arr) {
+  let max = arr[0];
+  for (let num of arr) {
+    if (num > max) max = num;
+  }
+  return max;
+}
+
+function showArray(arr) {
+  const lenY = findMax(arr);
+  const lenX = arr.length;
+
+  let str = '';
+  for (let i = 0; i < lenY; i++) {
+    for (let j = 0; j < lenX; j++) {
+      str += i > lenY - arr[j] ? '*' : ' ';
+    }
+    str += '\n';
+  }
+  console.log(str);
+}
+
+// =============
+
+function foo(arr) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] > arr[j]) count += 1;
+    }
+    result.push(count);
+  }
+
+  return result;
+}
+
+function getAverage(marks) {
+  let result = 0;
+  for (let mark of marks) {
+    result += mark;
+  }
+  result = Math.round(result / marks.length);
+  return result;
+}
+
+function fixTheMeerkat(arr) {
+  let tmp = arr[arr.length - 1];
+  arr[arr.length - 1] = arr[0];
+  arr[0] = tmp;
+  return arr;
+}
+
+function xMarksTheSpot(input) {
+  const result = [];
+  for (let i = 0; i < input.length; i += 1) {
+    for (let j = 0; j < input[i].length; j += 1) {
+      if (input[i][j] === 'x') {
+        result.push([i, j]);
+      }
+    }
+  }
+
+  if (result.length === 1) {
+    return result[0];
+  } else {
+    return [];
+  }
+}
+
+[[1, 2]];
+
+xMarksTheSpot([
+  ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+  ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+  ['o', 'o', 'o', 'o', 'x', 'o', 'o', 'o'],
+  ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+  ['o', 'o', 'o', 'o', 'o', 'o', 'x', 'o'],
+  ['o', 'o', 'o', 'o', 'o', 'o', 'o', 'o'],
+]);
