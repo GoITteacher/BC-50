@@ -170,3 +170,31 @@ callback функцію для кожного об'єкта, передавши 
 // }
 
 // ===============
+
+//encryptThis("hello world") === "104olle 119drlo"
+
+function encryptThis(string) {
+  const array = string.split(' ');
+  return array.map(encrypt).join(' ');
+}
+
+function encrypt(str) {
+  let newString = '';
+  newString += str.charCodeAt(0);
+
+  switch (str.length) {
+    case 1:
+      break;
+    case 2:
+      newString += str[str.length - 1];
+      break;
+    default:
+      newString += str[str.length - 1];
+      newString += str.substr(2, str.length - 3);
+      newString += str[1];
+  }
+
+  return newString;
+}
+
+console.log(encryptThis('h world'));
