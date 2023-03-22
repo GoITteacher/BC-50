@@ -85,7 +85,7 @@ const users = [
       },
     },
     phone: '493-170-9623 x156',
-    website: 'kale.biz',
+    website: 'kale.net.biz',
     company: {
       name: 'Robel-Corkery',
       catchPhrase: 'Multi-tiered zero tolerance productivity',
@@ -232,3 +232,39 @@ const users = [
   },
 ];
 // ====================
+
+const userListEl = document.querySelector('.js-list-users');
+
+function createMarkup(users) {
+  return users
+    .map(
+      ({ id, name, username, email, address, phone, website }) =>
+        `<li class="user-card">
+<span>${id}</span>
+<span>${name}</span>
+<span>${username}</span>
+<span>${email}</span>
+<br>
+Address: ${address.city}, ${address.suite}, ${address.street}
+<br>
+Phone number: ${phone}
+<br>
+Site: ${website}
+</li>`,
+    )
+    .join('\n');
+}
+
+function renderMarkup(length) {
+  const sortedUser = users
+    .filter(user => user.website.endsWith('.net'))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  // userListEl.insertAdjacentHTML('beforeend', createMarkup(sortedUser));
+  userListEl.insertAdjacentHTML(
+    'beforeend',
+    createMarkup(users.slice(0, length)),
+  );
+}
+
+renderMarkup(5);

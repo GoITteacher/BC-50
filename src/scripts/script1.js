@@ -80,3 +80,36 @@ const cars = [
     onSale: false,
   },
 ];
+
+const carsEl = document.querySelector('.js-table-cars');
+
+function createMarkup(cars) {
+  return cars
+    .map(car => {
+      return `
+    <tr>
+        <td>${car.make}</td>
+        <td>${car.model}</td>
+        <td>${car.type}</td>
+        <td>${car.amount}</td>
+        <td>${car.price}</td>
+        <td>${car.onSale}</td>
+    </tr>
+    `;
+    })
+    .join('');
+}
+
+function renderCars() {
+  carsEl.lastElementChild.insertAdjacentHTML('afterbegin', createMarkup(cars));
+  const createP = document.createElement('p');
+  createP.textContent = cars.reduce((acc, { amount, onSale }) => {
+    if (onSale) {
+      acc += amount;
+    }
+    return acc;
+  }, 0);
+  carsEl.after(createP);
+}
+
+renderCars();
