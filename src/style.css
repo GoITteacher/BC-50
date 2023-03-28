@@ -119,14 +119,13 @@ li{
     -webkit-filter: blur(5px);
     filter: blur(5px);
     transition: filter 400ms, -webkit-filter 400ms;
+    border-radius: 50px;
+    border:10px solid red;
 }
 
 .blur-up.lazyloaded {
     -webkit-filter: blur(0);
     filter: blur(0);
-}
-
-
-.my-header{
-    color:red;
+    border: none;
+    border-radius: 0;
 }

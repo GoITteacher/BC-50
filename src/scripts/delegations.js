@@ -1,4 +1,5 @@
 import { users, albums, photos } from './data.js';
+
 const refs = {
   userListEl: document.querySelector('.js-user-list'),
   albumListEl: document.querySelector('.js-album-list'),
@@ -43,7 +44,17 @@ function markupAlbums(albums) {
 }
 function markupCards(photos) {
   return photos
-    .map(photo => `<img src="${photo.url}" alt="${photo.title}">`)
+    .map(
+      photo => `<img loading="lazy" src="${photo.url}" alt="${photo.title}">`,
+    )
+    .join('');
+}
+function markupCardsForModal(photos) {
+  return photos
+    .map(
+      photo =>
+        `<img class="lazyload blur-up" src="https://www.jimdo.com/static/060fc292d0fa8170d0349034f007a5bd/5ce94/Logo_LogoExample_Header_4_EN.png" data-src="${photo.url}" alt="${photo.title}">`,
+    )
     .join('');
 }
 function markupModal(user, photos) {
@@ -59,7 +70,7 @@ function markupModal(user, photos) {
   Company: ${user.company.name}
   <hr>
   <div class="fb fb-v list modal-list js-modal-list">
-    ${markupCards(photos)}
+    ${markupCardsForModal(photos)}
   </div>`;
 
   return markup;
