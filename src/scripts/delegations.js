@@ -5,7 +5,6 @@ const refs = {
   photoListEl: document.querySelector('.js-photo-list'),
   modalEl: document.querySelector('.js-modal'),
   backdropEl: document.querySelector('.backdrop'),
-  onlineListElem: document.querySelector(),
 };
 
 refs.userListEl.insertAdjacentHTML('afterbegin', markupUsers(users));
@@ -59,7 +58,7 @@ function markupModal(user, photos) {
   <hr>
   Company: ${user.company.name}
   <hr>
-  <div class="fb fb-v list js-modal-list" style="flex-wrap:wrap; height:200px;">
+  <div class="fb fb-v list modal-list js-modal-list">
     ${markupCards(photos)}
   </div>`;
 
