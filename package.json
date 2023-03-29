@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "push": "git add . && git commit -m 'update' && git push"
+    "push": "git add . && git commit -m 'update' && git push",
+    "start": "npx parcel src/index.html",
+    "log": "touch helloWorld.txt"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GoITteacher/js-template-practic/issues"
   },
-  "homepage": "https://github.com/GoITteacher/js-template-practic#readme"
+  "homepage": "https://github.com/GoITteacher/js-template-practic#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
 }

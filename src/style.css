@@ -122,3 +122,10 @@ li{
     border-radius: 50px;
     border:10px solid red;
 }
+
+.blur-up.lazyloaded {
+    -webkit-filter: none;
+    filter: none;
+    border-radius: 0;
+    border:none;
+}
