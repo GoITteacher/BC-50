@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "push": "git add . && git commit -m 'update' && git push",
-    "start": "npx parcel src/index.html",
-    "log": "touch helloWorld.txt"
+    "start": "npx parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,9 @@
   "homepage": "https://github.com/GoITteacher/js-template-practic#readme",
   "devDependencies": {
     "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2",
+    "lodash": "^4.17.21"
   }
 }
