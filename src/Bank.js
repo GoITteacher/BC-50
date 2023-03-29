@@ -14,6 +14,7 @@ export class Bank {
 
     this.historyTransaction.push(transaction);
   }
+
   withdraw(value) {
     this.balance -= +value;
 
