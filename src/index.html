@@ -4,27 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modal.css">
+    <title>EXAMPLE</title>
 </head>
 <body>
-    <a href="./delegations.html">Second Page</a>
-    <form class="box js-form">
-        <input type="text" name="text1">
-        <p></p>
-        <input type="text" name="text2">
-        <p></p>
 
-        <button type="submit">Submit</button>
+  <div class="js-form-container fb fb-h">
+    <form class="form box js-form1" data-index="1">
+      <input class="js-input form-control" name="input-value">
+      <div>
+        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
+        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
+      </div>
+  
+      <div class="box" style="width: 200px;">
+        <div>
+          Balance: <span class="js-balance" name="balance">0</span>
+        </div>
+        <div>
+          History:
+          <ul class="js-history" name="history">
+          </ul>
+        </div>
+      </div>
+    </form>
+  
+    <form class="form box js-form2" data-index="2">
+      <input class="js-input form-control" name="input-value">
+      <div>
+        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
+        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
+      </div>
+  
+      <div class="box" style="width: 200px;">
+        <div>
+          Balance: <span class="js-balance" name="balance">0</span>
+        </div>
+        <div>
+          History:
+          <ul class="js-history" name="history">
+          </ul>
+        </div>
+      </div>
     </form>
 
-    <div class="box js-box" style="width:500px; height:500px;">
-        <h2 class="js-info">0,0</h2>
-    </div>
-    
+    <form class="form box js-form3" data-index="3">
+      <input type="text" class="form-control" name="name">
+      <textarea class="form-control" name="bio"></textarea>
+      <input type="password" class="form-control" name="password">
 
-    
-    <script src="./scripts/index.js" type="module"></script>
+      <div>
+        <input type="radio" value="1" name="radio1">
+        <input type="radio" value="2" name="radio1">
+        <input type="radio" value="3" name="radio1">
+      </div>
+
+      <input type="checkbox" name="check1">
+      <input type="checkbox" name="check2">
+      <input type="checkbox" name="check3">
+
+      <button type="submit" class="form-control"> SEND DATA </button>
+    </form>
+  </div>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
