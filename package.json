@@ -1,0 +1,21 @@
+{
+  "name": "js-template-practice",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /js-example/",
+    "push": "git add . && git commit -m 'update' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoITteacher/js-template-practic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoITteacher/js-template-practic/issues"
+  },
+  "homepage": "https://github.com/GoITteacher/js-template-practic#readme"
+}
