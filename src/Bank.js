@@ -12,7 +12,7 @@ export class Bank {
       balance: this.balance,
     };
 
-    this.historyTransaction.push(transaction);
+    this.historyTransaction.unshift(transaction);
   }
 
   withdraw(value) {
@@ -24,6 +24,6 @@ export class Bank {
       balance: this.balance,
     };
 
-    this.historyTransaction.push(transaction);
+    this.historyTransaction.unshift(transaction);
   }
 }
