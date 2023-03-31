@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "prepush": "rm -rf .parcel-cache",
     "push": "git add . && git commit -m 'update' && git push",
     "start": "npx parcel src/index.html"
   },
