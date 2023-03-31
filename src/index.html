@@ -11,47 +11,14 @@
 </head>
 <body>
 
-  <div class="js-form-container fb fb-h">
-    <form class="form box js-form1" data-index="0">
-      <input class="js-input form-control" name="input-value" type="number" required>
-      <div>
-        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
-        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
-      </div>
-  
-      <div class="box" style="width: 200px;">
-        <div>
-          Balance: <span class="js-balance" name="balance">0</span>
-        </div>
-        <div>
-          History:
-          <ul class="js-history" name="history">
-          </ul>
-        </div>
-      </div>
-    </form>
-  
-    <form class="form box js-form2" data-index="1">
-      <input class="js-input form-control" name="input-value" type="number" required value="0">
-      <div>
-        <button class="js-deposit form-control" name="deposit-btn">Deposit</button>
-        <button class="js-withdraw form-control" name="withdraw-btn">Withdraw</button>
-      </div>
-  
-      <div class="box" style="width: 200px;">
-        <div>
-          Balance: <span class="js-balance" name="balance">0</span>
-        </div>
-        <div>
-          History:
-          <ul class="js-history" name="history">
-            
-          </ul>
-        </div>
-      </div>
-    </form>
+  <div class="js-form-container fb fb-h container">
+    <div class="box fb fb-v js-input-box">
+      <input class="js-input-name" type="text" name="name">
+      <input class="js-input-email" type="text" name="email">
+      <input class="js-input-password" type="password" name="password">
+    </div>
 
-    <form class="form box js-form3" data-index="3">
+    <form class="form box js-form-1" data-index="1">
       <input type="text" class="form-control" name="name">
       <textarea class="form-control" name="bio"></textarea>
       <input type="password" class="form-control" name="password">
@@ -68,6 +35,32 @@
 
       <button type="submit" class="form-control"> SEND DATA </button>
     </form>
+
+    <div class="fb fb-v">
+      <form class="form box js-form-2" data-index="1">
+        <input type="text" class="form-control" name="name">
+        <textarea class="form-control" name="bio"></textarea>
+        <input type="password" class="form-control" name="password">
+  
+        <div>
+          <input type="radio" value="1" name="radio1">
+          <input type="radio" value="2" name="radio1">
+          <input type="radio" value="3" name="radio1">
+        </div>
+  
+        <input type="checkbox" name="check1">
+        <input type="checkbox" name="check2">
+        <input type="checkbox" name="check3">
+  
+        <button type="submit" class="form-control"> SEND DATA </button>
+      </form>
+      <div class="fb">
+        <button class="btn btn-primary js-btn-save">Save</button>
+        <button class="btn btn-primary js-btn-load">Load</button>
+      </div>
+    </div>
+
+    
   </div>
     <script type="module" src="./index.js"></script>
 </body>
