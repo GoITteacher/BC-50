@@ -623,3 +623,20 @@ const posts = [
     body: 'quibusdam rerum quia nostrum culpa\nculpa est natus impedit quo rem voluptate quos\nrerum culpa aut ut consectetur\nsunt esse laudantium voluptatibus cupiditate rerum',
   },
 ];
+
+const postsListEl = document.querySelector('.js-posts');
+
+function createMarkup(posts) {
+  return posts.map(templatePost).join('');
+}
+function templatePost({ name, email, body }) {
+  return `<div class="user-card">
+  <h4>${name}</h4>
+  <span>${email}</span>
+  <p>${body}</p>
+</div>`;
+}
+postsListEl.insertAdjacentHTML('afterbegin', createMarkup(posts));
+
+const count = posts.length;
+postsListEl.insertAdjacentHTML('beforebegin', `<h3>CountPost: ${count}</h3>`);

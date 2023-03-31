@@ -459,3 +459,15 @@ const photos = [
 ];
 
 // ========================
+
+const imageListElem = document.querySelector('.js-image-list');
+
+function templateImage({ url, title }) {
+  return `<img src="${url}" alt="${title}"></img>`;
+}
+
+function createMarkup(photos) {
+  return photos.map(templateImage).join('');
+}
+
+imageListElem.insertAdjacentHTML('afterbegin', createMarkup(photos));

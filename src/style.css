@@ -37,3 +37,15 @@ table, th, td {
 * {
     box-sizing: border-box;
 }
+
+.user-card {
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid violet;
+    border-radius: 15px;
+    list-style: none;
+
+    padding: 16px 32px;
+    margin-bottom: 20px;
+}
+
