@@ -5,7 +5,7 @@
   "scripts": {
     "prepush": "rm -rf .parcel-cache",
     "push": "git add . && git commit -m 'update' && git push",
-    "start": "npx parcel src/index.html"
+    "start": "npx parcel src/*.html"
   },
   "repository": {
     "type": "git",
