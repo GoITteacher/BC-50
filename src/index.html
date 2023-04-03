@@ -9,13 +9,57 @@
 </head>
 <body>
     <a href="./timer.html">awdawd</a>
-    <form>
-        <input type="number" name="delay">
-        <input type="number" name="interval">
-        <input type="number" name="count">
-        <br>
-        <button type="submit">Start</button>
-    </form>
+
+    <div class="df">
+        <form class="box df df-v js-form-1">
+            <input type="number" name="date1">
+            <input type="number" name="date2">
+            <input type="text" name="result" value="RESULT" readonly>
+            <br>
+            <button type="submit">Test</button>
+        </form>
+
+        <form class="box df df-v js-form-2">
+            <input type="number" name="date">
+            <input type="text" name="result" value="RESULT" readonly>
+            <br>
+            <button type="submit">Test</button>
+        </form>
+
+        <form class="box df df-v js-form-3">
+            <input type="number" name="date">
+
+            <div class="df">
+                <div>
+                    <input type="radio" name="type" value="day" id="type1" checked>
+                    <label for="type1">Day</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" value="month" id="type2">
+                    <label for="type2">Month</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" value="year"  id="type3">
+                    <label for="type3">Year</label>
+                </div>
+            </div>
+            
+
+            <input type="text" name="result" value="RESULT" readonly>
+            <br>
+            <button type="submit">test</button>
+        </form>
+
+        <form class="box df df-v js-form-4">
+            <input type="number" name="date1">
+            <input type="number" name="date2">
+            <input type="number" name="date3">
+            <input type="text" name="result" value="RESULT" readonly>
+            <br>
+            <button type="submit">Test</button>
+        </form>
+    </div>
+    
 
     <script src="./js/index.js" type="module"></script>
 </body>
