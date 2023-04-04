@@ -236,7 +236,10 @@ Promise.reject(1)
     console.log(data);
   })
   .then(null, data => console.log(data))
-  .then(() => console.log('ok'));
+  .then(() => console.log('ok'))
+  .then()
+  .then()
+  .catch();
 ```
 
 ---
