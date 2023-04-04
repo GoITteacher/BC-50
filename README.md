@@ -4,19 +4,19 @@
 
 ```js
 setTimeout(function timeout() {
-  console.log('Таймаут');
+  console.log('1');
 }, 0);
 
 let p = new Promise(function (resolve, reject) {
-  console.log('Создание промиса');
+  console.log('2');
   resolve();
 });
 
 p.then(function () {
-  console.log('Обработка промиса');
+  console.log('3');
 });
 
-console.log('Конец скрипта');
+console.log('4');
 ```
 
 ---
@@ -117,16 +117,6 @@ new Promise(function (resolve) {
 }).then(function () {
   console.log('p3');
 });
-console.log('w1');
-async function test1() {
-  console.log('a1');
-  await test2();
-  console.log('a2');
-}
-async function test2() {
-  console.log('a3');
-}
-test1();
 console.log('w2');
 ```
 
@@ -155,8 +145,8 @@ Promise.resolve(1)
 ```js
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    console.log('Начните');
-    resolve('success');
+    console.log('1');
+    resolve('2');
   }, 5000);
 });
 
@@ -388,8 +378,8 @@ Promise.resolve()
   .then(() => console.log(2));
 
 Promise.resolve()
-  .then(() => console.log(11))
-  .then(() => console.log(12));
+  .then(() => console.log(3))
+  .then(() => console.log(4));
 ```
 
 ---
@@ -407,13 +397,13 @@ Promise.resolve()
   .then(() => console.log(4));
 
 Promise.resolve()
-  .then(() => console.log(11))
+  .then(() => console.log(5))
   .then(() => {
-    console.log(12);
+    console.log(6);
     throw new Error();
   })
-  .catch(() => console.log(13))
-  .then(() => console.log(14));
+  .catch(() => console.log(7))
+  .then(() => console.log(8));
 ```
 
 ---
