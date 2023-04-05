@@ -2,17 +2,15 @@
 
 ## LIST api:
 
-- https://rapidapi.com/diasnour0395--THKPibD0nf/api/random-user-generator1/
-- https://rapidapi.com/flowcode/api/flowcode1/
-- https://rapidapi.com/alberto-zE9RMSlyY/api/dbm/
-- https://rapidapi.com/jsavajols/api/getqrcode/
-- https://rapidapi.com/translated/api/mymemory-translation-memory/
-- https://rapidapi.com/weatherbit/api/weather/
-- https://rapidapi.com/jakash1997/api/superhero-search/
-- https://rapidapi.com/newscatcher-api-newscatcher-api-default/api/free-news/
-- https://rickandmortyapi.com/api/character/4
-- https://rapidapi.com/pgamerxdev/api/random-stuff-api/
-- https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/
+- [Random User Generator](https://rapidapi.com/diasnour0395--THKPibD0nf/api/random-user-generator1)
+- [Translate](https://rapidapi.com/translated/api/mymemory-translation-memory/)
+- [SuperHero](https://rapidapi.com/jakash1997/api/superhero-search/)
+- [Weather](https://rapidapi.com/weatherbit/api/weather/)
+- [News](https://rapidapi.com/newscatcher-api-newscatcher-api-default/api/free-news/)
+- [Rick and Morty](https://rickandmortyapi.com/api/character/4)
+- [Translate](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/)
+- [QR CODE](https://rapidapi.com/flowcode/api/flowcode1/)
+- [QR CODE](https://rapidapi.com/jsavajols/api/getqrcode/)
 
 ---
 
