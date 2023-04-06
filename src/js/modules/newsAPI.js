@@ -7,18 +7,3 @@ const options = {
     'X-RapidAPI-Host': 'free-news.p.rapidapi.com',
   },
 };
-
-export class NewsApi {
-  query = '';
-  page = 1;
-  constructor() {}
-
-  getNews(query) {
-    if (query) this.query = query;
-
-    return fetch(
-      `${BASE_URL}${END_POINT}?q=${this.query}&page=${this.page}`,
-      options,
-    ).then(response => response.json());
-  }
-}

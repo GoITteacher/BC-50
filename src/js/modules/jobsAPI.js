@@ -8,11 +8,3 @@ const options = {
     'X-RapidAPI-Host': 'arbeitnow-free-job-board.p.rapidapi.com',
   },
 };
-
-export class JobsApi {
-  constructor() {}
-
-  getJobs(url = BASE_URL) {
-    return fetch(url, options).then(response => response.json());
-  }
-}
