@@ -88,7 +88,6 @@ img {
   padding: 20px;
   align-items: center;
   justify-content: center;
-  max-height: 80vh;
 }
 
 .news-list::-webkit-scrollbar {
@@ -183,4 +182,8 @@ img {
   justify-content: center;
   align-items: center;
   width: fit-content;
+}
+
+.box{
+  border:1px solid black;
 }
