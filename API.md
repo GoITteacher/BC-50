@@ -49,3 +49,16 @@
 ```
 
 ---
+
+```hbs
+<div class='card'>
+  <div class='card-img-top'>
+    <img src='' alt='' style='width:200px;height:200px' />
+  </div>
+  <div class='card-body'>
+    <h2 class='card-title'>Имя: </h2>
+    <p class='card-text'>Вес: </p>
+    <p class='card-text'>Рост: </p>
+  </div>
+</div>
+```
