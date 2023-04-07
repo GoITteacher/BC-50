@@ -187,3 +187,26 @@ img {
 .box{
   border:1px solid black;
 }
+
+
+.card {
+  width: 288px;
+}
+
+.card-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  padding: 10px;
+}
+
+.card {
+  margin: 10px;
+}
