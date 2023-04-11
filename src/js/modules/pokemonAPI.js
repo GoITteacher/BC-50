@@ -38,6 +38,15 @@ export class Pokemon {
       });
   }
 
+  static async #transformPromise2(response) {
+    const data = await response.json();
+    Pokemon.nextUrl = data.next;
+    Pokemon.prevUrl = data.previous;
+    const promises = await Pokemon.#getPokemons(data.results);
+    const result = await Promise.all(promises);
+    return result;
+  }
+
   static #getPokemons(pokemons) {
     return pokemons.map(pokemon => {
       return fetch(pokemon.url).then(res => res.json());
